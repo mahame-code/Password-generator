@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fbfbfb;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8f9ff;
+  opacity: 1;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e8f9ff 27px
+    ),
+    repeating-linear-gradient(#2771fa55, #2771fa);
+}
+*:hover {
+  cursor: default;
+}
+.card {
+  background-color: hsla(223 100% 70% / 0.85);
+  border-radius: 12px;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  backdrop-filter: blur(4px);
+}
+.title {
+  font-size: 2rem;
+}
+
+.paragraphe {
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+.container-button {
+  background-color: #c4d9ff;
+  width: fit-content;
+  border-radius: 6px;
+  padding: 3px;
+  border: 2px solid hsl(219 100% 95%);
+  display: flex;
+  justify-content: space-around;
+  gap: 4px;
+}
+
+.boutton {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 150ms ease-out;
+}
+.boutton:hover {
+  background-color: hsla(223 100% 80% / 0.85);
+  cursor: pointer;
+}
+.boutton.active {
+  background-color: hsla(223 100% 70% / 0.9);
+}
+/* .color {
+  background-color: hsla(223 100% 80% / 0.85);
+} */
+
+.Generate {
+  margin-top: 3%;
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 2px solid hsl(219 100% 95%);
+  background-color: #c4d9ff;
+  font-size: 1rem;
+  transition: background-color 150ms;
+}
+.Generate:hover {
+  background-color: hsla(223 100% 80% / 0.85);
+  cursor: pointer;
+}
+.container-password {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  border: 3px solid #fbfbfb;
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+}
+.container-password,
+.icon:hover {
+  cursor: pointer;
+}
+.password {
+  font-family: "Fira Code";
+}
+.icon {
+  margin-left: auto;
+}
